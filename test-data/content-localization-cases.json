@@ -1,0 +1,4 @@
+[
+  {"name":"battery phone","productInformation":"The smartphone has a 6000mAh battery and supports 45W wired charging.","targetMarket":"United States","bannedPhrases":"#1 smartphone, guaranteed three-day battery life","expectedReview":"Unsupported duration claims must be flagged"},
+  {"name":"wireless earbuds","productInformation":"The earbuds support active noise cancellation and IPX4 water resistance.","targetMarket":"United States","bannedPhrases":"perfect sound, no compromises","expectedReview":"Do not invent battery life or certification claims"}
+]
