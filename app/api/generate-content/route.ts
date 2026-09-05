@@ -30,7 +30,7 @@ interface GenerateRequest {
 
 const platformPrompts = {
   tiktok: {
-    instructions: `Create a 20-35 second TikTok voiceover for a Nigerian TECNO audience. Open with a visual hook in the first 3 seconds, translate specs into a concrete everyday camera or battery scenario, sound like a local creator rather than an advert, and end with a clear but non-misleading CTA. Avoid unsupported price, availability, ranking, or waterproof claims. You MUST also return a scenePlan: 4-7 shots covering the full 20-35 seconds in order, each with start/end seconds, a concrete visual direction (what the camera sees), the voiceover line spoken in that shot, and short on-screen caption text. The voiceover lines across shots must assemble into the full script.`,
+    instructions: `Create a 20-35 second TikTok voiceover tailored to the configured target market and target audience. Open with a visual hook in the first 3 seconds, translate product specs into concrete everyday local scenarios, sound like a local creator rather than an advert, and end with a clear but non-misleading CTA. Avoid unsupported price, availability, ranking, or certification claims. You MUST also return a scenePlan: 4-7 shots covering the full 20-35 seconds in order, each with start/end seconds, a concrete visual direction (what the camera sees), the voiceover line spoken in that shot, and short on-screen caption text. The voiceover lines across shots must assemble into the full script.`,
     format: "Hook, scene beats, voiceover, CTA, disclaimer, shot-by-shot plan",
   },
   linkedin: {

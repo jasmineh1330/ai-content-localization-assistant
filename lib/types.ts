@@ -10,7 +10,7 @@ export interface GeneratedPost {
     scenePlan?: SceneShot[]
 }
 
-// One shot of a short-video storyboard (borrowed from OpenMontage's scene_plan stage)
+// One shot of a short-video storyboard (scene plan)
 export interface SceneShot {
     start: number
     end: number

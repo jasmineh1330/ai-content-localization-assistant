@@ -49,11 +49,11 @@ export const ContentConfig = ({
                         {/* Left Column - Knowledge Base */}
                         <div className="space-y-1">
                                 <Label htmlFor="knowledge-base" className="dark:text-gray-200 text-base font-medium">
-                                TECNO 产品事实库
+                                产品事实库
                             </Label>
                             <Textarea
                                 id="knowledge-base"
-                                placeholder="粘贴 CAMON 40 Pro 5G 的官方参数、市场版本、免责声明和可引用来源。不要填写未经确认的价格或促销信息。"
+                                placeholder="粘贴产品的官方参数、市场版本、免责声明和可引用来源，也可以通过多模态互动从图片/视频中提取。不要填写未经确认的价格或促销信息。"
                                 value={userConfig.knowledgeBase}
                                 onChange={(e) => setUserConfig((prev) => ({ ...prev, knowledgeBase: e.target.value }))}
                                 className="h-48 resize-none dark:bg-gray-700 dark:border-gray-600 dark:text-white"
@@ -76,10 +76,29 @@ export const ContentConfig = ({
                                             <SelectValue />
                                         </SelectTrigger>
                                         <SelectContent className="dark:bg-gray-700 dark:border-gray-600">
+                                            <SelectItem value="United States">United States（美国）</SelectItem>
+                                            <SelectItem value="United Kingdom">United Kingdom（英国）</SelectItem>
+                                            <SelectItem value="Canada">Canada（加拿大）</SelectItem>
+                                            <SelectItem value="Australia">Australia（澳大利亚）</SelectItem>
+                                            <SelectItem value="Germany">Germany（德国）</SelectItem>
+                                            <SelectItem value="France">France（法国）</SelectItem>
+                                            <SelectItem value="Spain">Spain（西班牙）</SelectItem>
+                                            <SelectItem value="Italy">Italy（意大利）</SelectItem>
+                                            <SelectItem value="Brazil">Brazil（巴西）</SelectItem>
+                                            <SelectItem value="Mexico">Mexico（墨西哥）</SelectItem>
+                                            <SelectItem value="Saudi Arabia">Saudi Arabia（沙特）</SelectItem>
+                                            <SelectItem value="UAE">UAE（阿联酋）</SelectItem>
+                                            <SelectItem value="Turkey">Turkey（土耳其）</SelectItem>
+                                            <SelectItem value="India">India（印度）</SelectItem>
+                                            <SelectItem value="Indonesia">Indonesia（印尼）</SelectItem>
+                                            <SelectItem value="Philippines">Philippines（菲律宾）</SelectItem>
+                                            <SelectItem value="Vietnam">Vietnam（越南）</SelectItem>
+                                            <SelectItem value="Thailand">Thailand（泰国）</SelectItem>
+                                            <SelectItem value="Japan">Japan（日本）</SelectItem>
+                                            <SelectItem value="South Korea">South Korea（韩国）</SelectItem>
                                             <SelectItem value="Nigeria">Nigeria（尼日利亚）</SelectItem>
-                                            <SelectItem value="United States">United States</SelectItem>
-                                            <SelectItem value="Indonesia">Indonesia</SelectItem>
-                                            <SelectItem value="Nigeria">Nigeria</SelectItem>
+                                            <SelectItem value="Egypt">Egypt（埃及）</SelectItem>
+                                            <SelectItem value="Kenya">Kenya（肯尼亚）</SelectItem>
                                         </SelectContent>
                                     </Select>
                                 </div>
@@ -144,7 +163,7 @@ export const ContentConfig = ({
                                     </Label>
                                     <Input
                                         id="target-audience"
-                                        placeholder="例如：尼日利亚年轻摄影爱好者"
+                                        placeholder="例如：目标市场的年轻摄影爱好者"
                                         value={userConfig.targetAudience}
                                         onChange={(e) => setUserConfig((prev) => ({ ...prev, targetAudience: e.target.value }))}
                                         className="dark:bg-gray-700 dark:border-gray-600 dark:text-white"

@@ -147,7 +147,7 @@ export function ReferenceStudio({ userConfig, setUserConfig, selectedModel, apiK
       </DialogTrigger>
       <DialogContent className="max-w-3xl max-h-[85vh] overflow-y-auto dark:bg-gray-800">
         <DialogHeader>
-          <DialogTitle className="dark:text-white">参考素材工坊</DialogTitle>
+          <DialogTitle className="dark:text-white">多模态互动</DialogTitle>
           <p className="text-sm text-gray-500 dark:text-gray-400">
             上传产品图或参考短视频，AI 提取可核验的产品事实与创作风格；只有能对应到素材原文的事实才会进入证据链。
           </p>

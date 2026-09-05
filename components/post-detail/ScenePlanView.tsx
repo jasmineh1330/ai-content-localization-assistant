@@ -6,8 +6,7 @@ import { Volume2 } from "lucide-react"
 import type { SceneShot } from "@/lib/types"
 import { speak, stopSpeaking } from "@/lib/speech"
 
-// Shot-by-shot storyboard view (the scene_plan stage, borrowed from
-// OpenMontage's pipeline: script -> shots -> voiceover -> caption).
+// Shot-by-shot storyboard view: script -> shots -> voiceover -> caption.
 export function ScenePlanView({ shots }: { shots: SceneShot[] }) {
   const [playingIndex, setPlayingIndex] = useState<number | null>(null)
 

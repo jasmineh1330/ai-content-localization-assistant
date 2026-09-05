@@ -32,11 +32,11 @@ export default function SocialMediaGenerator() {
   const [openAIBaseURL, setOpenAIBaseURL] = useState("");
 
   const [userConfig, setUserConfig] = useState<UserConfig>({
-    knowledgeBase: "品牌：TECNO\n产品：CAMON 40 Pro 5G\n事实来源：请粘贴官方尼日利亚产品页参数。\n高风险字段（价格/上市时间）：待市场确认。",
-    topic: "夜景人像与年轻摄影爱好者",
+    knowledgeBase: "品牌：（填写品牌名）\n产品：（填写产品名与市场版本）\n事实来源：请粘贴官方产品页参数，或通过多模态互动从图片/视频中提取。\n高风险字段（价格/上市时间）：待市场确认。",
+    topic: "新品核心卖点与使用场景",
     tone: "professional",
-    targetAudience: "尼日利亚年轻摄影爱好者",
-    targetMarket: "Nigeria",
+    targetAudience: "目标市场的年轻消费者",
+    targetMarket: "United States",
     bannedPhrases: "waterproof, best in the market, never charge again, guaranteed",
     postLength: "20-35 seconds",
     postsPerPlatform: {

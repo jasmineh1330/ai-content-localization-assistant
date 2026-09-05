@@ -20,8 +20,8 @@ export async function fileToDownscaledDataUrl(file: File, maxSide = 768, quality
   }
 }
 
-// Sample evenly spaced frames from a local video file (OpenMontage-style
-// reference analysis without uploading the whole clip).
+// Sample evenly spaced frames from a local video file for reference analysis
+// without uploading the whole clip.
 export async function extractVideoFrames(file: File, count = 4, width = 640, quality = 0.7): Promise<string[]> {
   const url = URL.createObjectURL(file)
   const video = document.createElement("video")

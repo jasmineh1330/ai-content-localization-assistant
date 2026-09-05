@@ -62,13 +62,13 @@ export const ContentArea = ({
             <div className="flex items-center justify-center min-h-[70vh] text-gray-500 dark:text-gray-400">
               <div className="w-full max-w-xl mx-auto">
                 {/* <Sparkles className="w-12 h-12 mx-auto mb-4 text-gray-300 dark:text-gray-600" /> */}
-                <div className="mb-3 inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800">TECNO · Nigeria · TikTok</div>
+                <div className="mb-3 inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-800">海外市场 · 多平台 · 可自选</div>
                 <h2 className="text-3xl font-semibold mb-2">From product facts to a publish-ready script</h2>
-                <p className="text-sm mb-4">Generate a 20–35 second CAMON 40 Pro 5G voiceover with evidence, risk flags and a review trail.</p>
+                <p className="text-sm mb-4">Generate market-ready short-video voiceovers for any overseas market with evidence, risk flags and a review trail.</p>
                 <div className="grid gap-3 mb-6">
                   {[
-                    { prompt: 'Write 3 TikTok hooks for CAMON 40 Pro 5G night portraits in Nigeria.', platform: 'tiktok' },
-                    { prompt: 'Turn the 50MP Sony LYT-700C Ultra Night Camera fact into a creator-style scene.', platform: 'tiktok' },
+                    { prompt: 'Write 3 TikTok hooks for the night portrait mode of our new phone.', platform: 'tiktok' },
+                    { prompt: 'Turn the 50MP ultra night camera fact into a creator-style scene.', platform: 'tiktok' },
                     { prompt: 'Create a cautious TikTok script for IP68/IP69 dust and water resistance with a disclaimer.', platform: 'tiktok' },
                   ].map(({ prompt, platform }, idx) => {
                     const Icon = platformIcons[platform as keyof typeof platformIcons];
